@@ -1,14 +1,16 @@
 import os
 import time
 
-print("This tool fixes al the problem released to ruby,gem,bundle,ssl in metasploit")
+print("This tool fixes all the problem released to ruby,gem,bundle,ssl in metasploit")
 time.sleep(3)
 os.system("pkg update && pkg upgrade -y")
 os.system("pkg install git && pkg install python2 && pkg install ruby && pkg install wget")
 print("Now your termux to date.")
 time.sleep(2)
+print("ready for termux installation.")
 os.system("wget https://github.com/gushmazuko/metasploit_in_termux/raw/master/metasploit.sh")
-os.system("chmod +x metasploit.sh && ./metasploit.sh")
+os.system("chmod +x metasploit.sh")
+os.system("./metasploit.sh")
 os.system("pkg install curl")
 os.system("pkg upgrade ruby")
 os.system("gem install bundle && gem install bundler")
