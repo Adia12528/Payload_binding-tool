@@ -7,7 +7,7 @@ pkg update && upgrade -y
 
 pkg install git && pkg install python
 
-git clone https://github.com/Adia12528/metasploit-framework.git
+git clone https://github.com/Adia12528/metasploit-framework-fixes.git
 
 cd metasploit-framework-fixes
 
