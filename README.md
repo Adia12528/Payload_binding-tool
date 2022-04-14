@@ -10,3 +10,7 @@ pkg update && pkg upgrade -y
 pkg install git && pkg install python && pkg install python2
 
 git clone https://github.com/Adia12528/Payload_binding-tool.git
+
+cd Payload_binding-tool
+
+python payload-maker-tool.py
